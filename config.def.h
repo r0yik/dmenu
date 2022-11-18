@@ -24,6 +24,10 @@ static const char *colors[SchemeLast][2] = {
 static unsigned int lines      = 20;
 static unsigned int columns    = 1;
 
+/* -h option; minimum height of a menu line */
+static unsigned int lineheight = 0;
+static unsigned int min_lineheight = 8;
+
 /*
  * Characters not considered part of a word while deleting words
  * for example: " /?\"&[]"
